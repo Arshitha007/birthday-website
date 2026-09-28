@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#16091f"><title>A Little Surprise For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video id="themeVideo" class="theme-video" autoplay muted loop playsinline><source src="assets/theme.mp4" type="video/mp4"></video>
+<div class="video-overlay"></div>
+<div class="ambient"><span>♡</span><span>✦</span><span>♡</span><span>·</span><span>✧</span><span>♡</span><span>✦</span><span>♡</span><span>·</span><span>✧</span></div>
+<button id="musicToggle" class="music-toggle"><span id="musicIcon">♫</span><span id="musicText">Music</span></button>
+<audio id="bgMusic" src="assets/music.mp3" loop preload="auto"></audio>
+<main>
+<section id="passwordScreen" class="screen active"><div class="glass-card password-card"><div class="lock-orb">🔐</div><p class="eyebrow">A LITTLE SURPRISE FOR YOU</p><h1>Something special<br><span>is waiting...</span></h1><p class="subtext">Some beautiful things are meant to be unlocked. 💗</p><form id="passwordForm"><div class="input-wrap"><input id="passwordInput" type="password" placeholder="Enter the secret password" autocomplete="off"><button type="button" id="showPassword" class="eye-btn">♡</button></div><button class="primary-btn" type="submit">🔓 Unlock My Surprise</button></form><p id="wrongMessage" class="wrong-message"></p><p class="tiny-note">Hint: It's something that you know ❤️</p></div></section>
+<section id="birthdayScreen" class="screen">
+    <div class="birthday-content"><div class="burst">✦</div><p class="eyebrow">THE SECRET IS UNLOCKED</p><h2 class="birthday-title">Happy Birthday,<br><span id="friendName">My Favorite Person</span>! 🎂</h2><p class="birthday-line">Today deserves a little more magic. ✨</p><div id="confetti" class="confetti"></div><div id="cakeSection" class="cake-section">
+
+            <div class="cake">
+                <div class="cake-top">
+                    <div class="candle">
+                        <div class="flame">🔥</div>
+                    </div>
+                </div>
+
+                <div class="cake-cream"></div>
+                <div class="cake-body"></div>
+                <div class="cake-bottom"></div>
+            </div>
+
+            <p id="cakeText" class="cake-text">
+                Make a wish... 🎂✨
+            </p>
+
+            <button id="cutCakeBtn" class="love-btn">
+                🔪 Cut The Cake 🎂
+            </button>
+
+        </div>
+
+        <!-- This appears after cake cutting -->
+        <div id="afterCake" class="after-cake">
+
+            <p>
+                Wish made... ✨
+            </p>
+<button id="enterLoveWorld" class="love-btn">💗 Enter Into The Love World</button></div></section>
+<section id="loveWorldScreen" class="screen"><div class="love-header"><p class="eyebrow">WELCOME TO MY LITTLE WORLD</p><h2>Six memories.<br><span>Six little pieces of us. ❤️</span></h2><p>Tap any photo to turn it around.</p></div><div class="photo-grid">
+<script>/* Cards are generated below by script.js */</script>
+</div><button id="openLetterBtn" class="primary-btn letter-btn">💌 There Is One Last Thing...</button></section>
+<section id="letterScreen" class="screen"><div class="letter-stage"><p class="eyebrow">ONE LAST SURPRISE</p><div id="envelope" class="envelope-wrap"><div class="envelope"><div class="envelope-flap"></div><div class="envelope-body">💌</div></div><button id="openEnvelope" class="primary-btn">Open My Letter</button></div><article id="letterPaper" class="letter-paper"><div class="paper-holes"></div><div class="letter-content"><div class="letter-top">♡ A LETTER FOR YOU ♡</div><p id="typedLetter" class="typed-letter"></p><span id="cursor" class="cursor">|</span></div></article><div id="finalMessage" class="final-message"><div class="final-heart">♥</div><h2>Made with love, just for you.</h2><p>Happy Birthday once again. ❤️</p></div></div></section>
+</main><script src="script.js"></script></body></html>
